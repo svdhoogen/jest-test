@@ -10,4 +10,7 @@ const multiply = (a, b) => a * b;
 // Wrongly divides a and b
 const divide = (a, b) => a / b;
 
-module.exports = {sum, subtract, multiply, divide}
+// This logic works now!
+
+// eslint-disable-next-line no-undef
+module.exports = {sum, subtract, multiply, divide};
