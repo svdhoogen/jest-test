@@ -19,7 +19,7 @@ test('multiplying 2 x 2 should equal 4', () => {
 });
 
 test('dividing 4 / 2 should equal 2', () => {
-  const divideResult = math.multiply(4, 2);
+  const divideResult = math.divide(4, 2);
 
   expect(divideResult).toBe(2);
 });
