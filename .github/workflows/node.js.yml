@@ -5,20 +5,15 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "develop", "master" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "develop", "master" ]
+    branches: [ "master" ]
 
 jobs:
   build:
     name: Node.js CI
 
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.x, 18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -30,3 +25,5 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - name: Run ESLint
+    - run: npm run lint

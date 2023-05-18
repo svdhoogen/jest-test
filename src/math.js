@@ -12,4 +12,5 @@ const divide = (a, b) => a / b;
 
 // This logic works now!
 
-module.exports = {sum, subtract, multiply, divide}
+// eslint-disable-next-line no-undef
+module.exports = {sum, subtract, multiply, divide};
