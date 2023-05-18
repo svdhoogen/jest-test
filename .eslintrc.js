@@ -11,7 +11,7 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
-        "no-undefined": ["off"],
-        "semi": ["error"]
+        "semi": ["error"],
+        "no-undef": ["off"],
     }
-}
+};
