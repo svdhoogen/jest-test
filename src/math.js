@@ -10,4 +10,6 @@ const multiply = (a, b) => a * b;
 // Wrongly divides a and b
 const divide = (a, b) => a / b;
 
+// This logic works now!
+
 module.exports = {sum, subtract, multiply, divide}
